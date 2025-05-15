@@ -1,7 +1,8 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 // API key would typically come from env variables
-const API_KEY = '0ea27c8c6e4d414d8526131516f8127a';
+const API_KEY = process.env.NEXT_PUBLIC_FINANCE_API_KEY || '';
+
 const BASE_URL = 'https://newsapi.org/v2';
 
 export interface NewsArticle {

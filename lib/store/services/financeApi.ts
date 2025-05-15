@@ -1,7 +1,8 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 // API key would typically come from env variables
-const API_KEY = 'ITZXP9D75UVBXNZN';
+const API_KEY = process.env.NEXT_PUBLIC_FINANCE_API_KEY || '';
+
 const BASE_URL = 'https://www.alphavantage.co';
 
 export interface StockQuote {
