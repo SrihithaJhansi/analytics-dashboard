@@ -1,7 +1,8 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 // API key would typically come from env variables
-const API_KEY = '1635890035cbba097fd5c26c8ea672a1';
+const apiKey = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
+
 const BASE_URL = 'https://api.openweathermap.org/data/2.5';
 
 export interface WeatherResponse {
